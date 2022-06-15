@@ -5,21 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      type="text/javascript"
+      src="/node_modules/papaparse/papaparse.js"
+    ></script>
   </head>
   <body>
     <header></header>
     <main>
       <section>
+        <h1>Formulário 1</h1>
         <form id="input-csv">
           <input type="file" id="csvFile" accept=".csv" />
           <br />
           <input type="submit" value="Submit" />
         </form>
       </section>
-      <section id="tabela">
-        <table id="my-table"></table>
+      <section id="formulário 2">
+        <h1>Formulário 2</h1>
+        <form id="import-csv"></form>
+        <label for="csv">Selecione CSV:</label>
+        <input
+          id="csv"
+          name="csv"
+          type="file"
+          placeholder="Selecione o arquivo CSV"
+          accept=".csv"
+        />
+        <button id="read-csv">Enviar</button>
       </section>
     </main>
-    <script src="script.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/readcsv.js"></script>
   </body>
 </html>
