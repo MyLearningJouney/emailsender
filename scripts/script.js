@@ -1,5 +1,3 @@
-import * as module from './node_modules/papaparse/papaparse.js';
-
 const inputCsv = document.getElementById("input-csv");
 const csvFile = document.getElementById("csvFile");
 var b = Papa.parse(csvFile)
